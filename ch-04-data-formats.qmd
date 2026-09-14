@@ -418,7 +418,7 @@ print(f"Elevation: {elevation} meters")
 # Elevation: 1635.0 meters
 ```
 
-The strategy is always the same: start with `type()` and `.keys()` at the top level, then work inward one key at a time. When you find the lists you need, convert them to a DataFrame:
+The strategy is always the same: start with `type()` and `.keys()` at the top level, then work inward one key at a time. This helps you to understand how the data is organized before trying to extract anything. This makes it easier to turn the data into a DataFrame.  When you find the lists you need, convert them to a DataFrame:
 
 ```{python}
 import pandas as pd
